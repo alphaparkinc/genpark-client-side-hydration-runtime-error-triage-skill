@@ -1,0 +1,39 @@
+{
+  "name": "genpark-client-side-hydration-runtime-error-triage-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - React and Next.js client-side SSR hydration error triager diagnosing timestamp mismatches and DOM tree differences.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "vibe-coding",
+  "tags": [
+    "nextjs",
+    "hydration-error",
+    "react-ssr",
+    "error-triage",
+    "v0-dev"
+  ],
+  "inputs": {
+    "error_stack": {
+      "type": "string"
+    },
+    "server_rendered_html": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "triage_id": {
+      "type": "string"
+    },
+    "root_cause": {
+      "type": "string"
+    },
+    "recommended_fix_pattern": {
+      "type": "string"
+    },
+    "triage_dossier_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
